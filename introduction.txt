@@ -1,0 +1,31 @@
+# Customer churn for a telecommunications company
+
+This data-set is based on data obtained here: https://community.ibm.com/community/user/businessanalytics/blogs/steven-macko/2019/07/11/telco-customer-churn-1113
+
+Predict customer churn (binary classification) for a telecommunications company, based on customer characteristics.
+Each row has a unique customer id (not to be used for prediction purposes), demographics and a description of the contracted services.
+You have to predict whether the customer will churn.
+
+## Highlights
+
+* The data is clean.
+* The data has some categorical columns.
+* The data is slightly unbalanced: 26% of customers churned during the studied period.
+
+## Recommendations
+
+Although the class imbalance is not severe, if you still decide to re-balance classes using oversampling, remember to be careful about data leakage!
+Python library "imblearn" has a lot of utilities to deal with unbalance learning and it has a Pipeline class which is compatible with sklearn's Pipeline class.
+Reference: https://imbalanced-learn.org/stable/auto_examples/pipeline/plot_pipeline_classification.html
+
+After performing an initial data exploration, remember to only present in your project report the **interesting** finds, if any.
+The presentation of data (via a textual description, tables or plots) should be short and informative.
+
+In evaluating this project I am more interested in your correct application of model selection methodologies than in the performance of your model.
+
+If your model has hyperparameters, I am more interested that your model selection procedure took them into account, even if you only try a few possible values for them.
+Hyperparameter selection and model training shall not use all your computing resources for one week, but it should be set up "as if" you had access to a large computational infrastructure.
+The only difference should be in the number of hyperparameter configurations evaluated; not in the rigour of the methodology used.
+
+You should choose which classification metric to use (and motivate your choice!).
+Reference: https://scikit-learn.org/stable/modules/model_evaluation.html#classification-metrics
